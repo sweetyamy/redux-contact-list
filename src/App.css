@@ -1,38 +1,122 @@
-.App {
+.title {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div {
+  padding: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* 인풋박스 스피너 제거 */
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.label {
+  font-family: Lato, Lucida Sans Unicode, Lucida Grande, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* search */
+.btn-all {
+  margin-left: 6px; 
+}
+
+.btn-delete {
+  margin-left: 6px; 
+  margin-right: 0;
+}
+
+.search-btn-area {
+  display: flex;
+  justify-content: center;
+  align-items: right;
+}
+
+.search-hr {
+  margin-top: 15px;
+  border-top: 2px dotted #a4a4a4; 
+}
+
+/* Contact Lists*/
+.contact-list--index {
+  width: 30px;
+  height: 30px;
+  display: inline-block; 
+  padding: 5px 10px; 
+  border-radius: 3px; 
+  background-color: #ddd; 
+  color: #fff; 
+  font-weight: bold;
+  text-align: center; 
+}
+
+.user-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contact-list--fullname {
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list--phone {
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list--email {
+  font-weight: 200;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list--address {
+  font-weight: 200;
+  align-items: left;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list-divider {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 20px; 
+}
+
+.pagination{
+  margin: 0;
 }
