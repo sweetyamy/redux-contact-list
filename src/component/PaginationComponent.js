@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pagination, Row } from 'react-bootstrap';
+import { Pagination } from 'react-bootstrap';
 
 const PaginationComponent = ({
   itemsPerPage,
